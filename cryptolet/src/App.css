@@ -1,0 +1,334 @@
+.App {
+  text-align: center;
+  width: 350px;
+  height: 580px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #001F1E, #064443);
+  color: white;
+}
+
+.frontPageLogo {
+  width: 80%;
+}
+
+.frontPageButton {
+  width: 90%;
+  margin-top: 20px;
+  background: #00FFB4;
+  color: #001F1E;
+}
+
+.frontPageBottom {
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+  gap: 5px;
+  color: white;
+}
+
+.frontPageBottom:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.h4 {
+  color: white;
+  padding-bottom: 50px;
+}
+
+a:visited {
+  color: #00FFB4;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(135deg, #001F1E, #064443);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.headerLogo {
+  height: 65px;
+  width: 65px;
+  margin: 5px 0px 0px 5px;
+}
+
+.dropdown {
+  margin-right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.content {
+  text-align: center;
+  width: 350px;
+  height: 520px;
+  overflow-y: auto;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(135deg, rgba(0, 31, 30, 0.9), rgba(6, 68, 67, 0.9));
+  /* padding: 20px; */
+}
+
+.walletView {
+  width: 350px;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  color: white;
+  background: linear-gradient(145deg, rgba(6, 68, 67, 0.4), rgba(0, 31, 30, 0.4));
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 31, 30, 0.2);
+}
+
+.tokenList, .sendRow, .actionButton {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 16px rgba(0, 31, 30, 0.1);
+}
+
+.mnemonic {
+  background: rgba(0, 255, 180, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 16px rgba(0, 31, 30, 0.1);
+}
+
+.tokenList {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.sendRow {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.actionButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mnemonic {
+  color: white;
+  background: rgba(0, 255, 180, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px;
+  text-align: justify;
+  width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.seedPhraseContainer {
+  width: 310px;
+  min-height: 160px;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.walletName {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.walletAddress {
+  color: #00FFB4;
+}
+
+.logoutButton {
+  color: #00FFB4;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  border-radius: 100px;
+}
+
+.logoutButton:hover {
+  background: rgba(0, 255, 180, 0.1);
+  cursor: pointer;
+}
+
+.nftImage {
+  margin-bottom: 10px;
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tokenAmount,
+.tokenList,
+.tokenName {
+  color: white;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.ant-list-item-meta-title,
+.ant-list-item-meta-description {
+  color: white;
+}
+
+/* Toastify styles */
+.Toastify__toast-container {
+  position: fixed;
+  top: 120px;
+  left: calc(50% - 175px);
+  width: 350px;
+  z-index: 9999;
+  padding: 0;
+}
+
+.Toastify__toast {
+  margin: 0;
+  width: 350px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #001F1E, #064443);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 180, 0.1);
+  padding: 8px;
+}
+
+.Toastify__toast-body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Toastify__toast--success {
+  border: 1px solid #00FFB4;
+}
+
+.Toastify__toast--error {
+  border: 1px solid #ff4444;
+}
+
+.Toastify__toast--info {
+  border: 1px solid #00FFB4;
+}
+
+.walletAddressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.copyButton {
+  left: 55px;
+  bottom: 20px;
+  position: relative;
+  color: #00FFB4;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.copyButton:hover {
+  color: #00FFB4;
+  opacity: 0.8;
+}
+
+.ant-btn-primary{
+  background-color: #00FFB4;
+}
+
+
+/* Add these button styles */
+.ant-btn {
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  background: rgba(0, 255, 180, 0.2) !important;
+  color: #00FFB4 !important;
+  border-color: #00FFB4 !important;
+}
+
+.ant-btn-primary {
+  background: #00FFB4 !important;
+  color: #001F1E !important;
+  border: none !important;
+}
+
+.ant-btn-primary:hover {
+  background: rgba(0, 255, 180, 0.8) !important;
+  color: #001F1E !important;
+}
+
+/* Update existing styles */
+.frontPageButton {
+  width: 90%;
+  margin-top: 20px;
+  background: #00FFB4;
+  color: #001F1E;
+  transition: all 0.3s ease;
+}
+
+.frontPageButton:hover {
+  background: rgba(0, 255, 180, 0.8);
+  color: #001F1E;
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Cryptolet",
+  "version": "1.0.0",
+  "description": "Self Custodial and Decentralized Crypto Wallet",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "favicon.ico",
+      "48": "favicon.ico",
+      "128": "favicon.ico"
+    }
+  },
+  "icons": {
+    "16": "favicon.ico",
+    "48": "favicon.ico",
+    "128": "favicon.ico"
+  },
+  "permissions": [
+    "storage",
+    "clipboardWrite"
+  ]
+}
